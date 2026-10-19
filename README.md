@@ -6,6 +6,9 @@ external tools and untrusted workloads.
 
 The project is currently in early development.
 
+For the broader human-centered cognitive vision, see [Research direction](DIRECTION.md).
+For the bounded engineering results and limitations, see [Research status](STATUS.md).
+
 Its central research question is straightforward:
 
 > How can a durable software agent be given meaningful capabilities without
