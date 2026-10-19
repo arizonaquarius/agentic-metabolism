@@ -1,214 +1,69 @@
 # Agentic Metabolism
 
-Agentic Metabolism is an experimental personal-agent architecture focused on
-bounded authority, durable state, auditability, and safe interaction with
-external tools and untrusted workloads.
+**Research into durable human context, inspectable evidence, and bounded agency.**
 
-The project is currently in early development.
+Agentic Metabolism (AM) asks how a person might preserve the history of their thinking across conversations, documents, models, and years — and eventually delegate useful work without surrendering control of consequential actions.
 
-Its central research question is straightforward:
+Two problems belong together:
 
-> How can a durable software agent be given meaningful capabilities without
-> giving those capabilities unlimited or ambiguous authority?
+- **Information continuity.** Where did a claim originate? Was it observed, inferred, disputed, or corrected? Can we reconstruct what was understood *at the time*, before later evidence arrived?
+- **Governed action.** What does the person want? What may a model propose? What was authorized, within which limits, and what independent evidence tells us what actually happened?
 
-Rather than beginning with a large collection of agent features, Agentic
-Metabolism is being developed from the authority and execution boundary outward.
+A newer AI summary should not quietly replace original evidence. A persistent reminder should not become standing permission to act. A model reporting success is not the same thing as observing an effect.
 
----
+AM is **early-stage research**. It is not an available personal assistant, a production security platform, or an unrestricted autonomous system.
 
-## Design goals
+## Why build it?
 
-The project is exploring an agent architecture in which:
+Digital systems preserve outcomes more readily than the paths that produced them. Conversations accumulate, objectives get lost, and interpretations are compressed into summaries. A mistaken synthesized memory may be repeated until it looks like established fact.
 
-- capabilities are explicitly granted rather than assumed
-- authority can be scoped to a particular task or execution lifetime
-- untrusted workloads execute inside constrained environments
-- protected state is separated from workload-accessible state
-- consequential actions are attributable and auditable
-- resource use can be bounded
-- failures should degrade safely rather than silently expanding authority
-- future subsystems can be added without weakening the underlying authority model
+The longer-term ambition is a **personal cognitive interface**: an environment in which a person can revisit observations, inspect changes of mind, recover unfinished objectives, test competing interpretations, and enlist replaceable models and tools. The original evidence remains available for challenge and correction. The person remains responsible for intent and consequential authorization.
 
-The goal is not to build an unrestricted autonomous system.
+“Metabolism” is a working metaphor for retaining, interpreting, revising, and using information. It is not a claim to have solved memory or cognition.
 
-The goal is to understand what minimum mechanisms are required for a useful
-agent to operate within enforceable boundaries.
+[Read the research direction →](DIRECTION.md)
 
----
+## Architectural separation
 
-## Current research focus
+The architecture distinguishes information, proposals, authority, execution, and observation.
 
-The current phase of development is focused on a minimal agent kernel and its
-security properties.
+| Responsibility | Boundary |
+| --- | --- |
+| **Information plane** | Preserve evidence, attributed interpretation, corrections, and historical context. Information grants no execution rights. |
+| **Proposal layer** | Models suggest actions and explain uncertainty. A proposal is not permission. |
+| **Scoped authority** | A human or explicitly authorized principal decides which actions, lifetimes, and resources are allowed. |
+| **Execution** | Work is constrained by reviewed interfaces and runtime boundaries, not assumed model obedience. |
+| **Independent observation** | Record outcomes, resource use, failures, and uncertainty without treating an agent's self-report as proof. |
 
-Work to date has concentrated on:
+This is a conceptual map, **not** a complete implementation. AM is being developed from its evidence and authority boundaries outward, rather than beginning with a broad list of agent features.
 
-- authority and capability boundaries
-- workload lifecycle semantics
-- separation between privileged kernel state and workload state
-- explicit interfaces between trusted and untrusted components
-- audit and provenance requirements
-- failure and termination behavior
-- resource and permission constraints
-- containment requirements for untrusted code
+## Evidence-backed progress
 
-The architecture is intentionally being developed before broadening the
-agent's operational capabilities.
+As of **October 19, 2026**, the latest promoted *private* implementation checkpoint is **v0.5.0**, focused on information-plane evidence continuity.
 
----
+A fixed-input local prototype preserves source evidence, explicit interpretations, corrections, and reconstructable historical packets. Separate finite supervisor and qualification experiments exercise scoped authority, process observation, lifecycle behavior, accounting, and uncertainty.
 
-## Adversarial validation
+This does **not** establish a general long-term memory service, autonomous interpretation of arbitrary documents, or production-ready containment. Generic hostile-workload admission remains closed. A planned hostile qualification campaign has not been executed, and a historical regression discrepancy remains unresolved despite successful later reruns.
 
-A major upcoming phase of the project is adversarial validation of the kernel's
-security assumptions.
+[Read the research status and limits →](STATUS.md)
 
-This testing is defensive.
+## Questions worth testing
 
-Untrusted or adversarial workloads may be used inside controlled test
-environments to determine whether they can violate declared system invariants,
-including attempts to:
+- When a synthesized memory conflicts with original evidence, what should survive and how should the disagreement be represented?
+- Can past decisions be reconstructed without importing facts learned later?
+- Does curated, provenance-bearing context actually improve subsequent model reasoning?
+- How can an objective remain available for years without becoming indefinite authority?
+- What would count as independent evidence that an external action occurred, failed, or remains uncertain?
+- Can personal context and intent remain portable when the provider, model, or interface changes?
 
-- access state outside their assigned execution compartment
-- obtain credentials or protected information
-- modify their own permissions or authority
-- persist beyond their authorized lifetime
-- communicate outside permitted network boundaries
-- consume resources beyond assigned limits
-- interfere with audit evidence or execution records
+Personal research, technical work, and evidence-aware financial analysis are possible application domains. This does not imply automatic brokerage or wallet activity.
 
-The objective is not merely to observe that a workload behaved correctly.
+## Defensive research and publication boundary
 
-The objective is to produce evidence showing where a prohibited action was
-stopped and which enforcement boundary was responsible.
+Security properties are hypotheses until tested against specific invariants. Adversarial validation is limited to owned or expressly authorized test environments. Untrusted workloads are research specimens, not the intended ordinary operation of an assistant.
 
-For example:
+This public repository is a **separately authored description**, not a mirror of the private codebase. Detailed implementation, test evidence, machine configuration, credentials, and personal material remain private. The internal results described here cannot be reproduced from the public repository alone.
 
-    workload request
-        -> authority decision
-        -> enforcement boundary
-        -> result
-        -> audit record
+**Start here:** [DIRECTION.md](DIRECTION.md) for the long-term ambition; [STATUS.md](STATUS.md) for what has and has not been demonstrated.
 
-This distinction matters because cooperative model behavior is not considered a
-substitute for structural containment.
-
----
-
-## Security philosophy
-
-Hostile code is not part of normal Agentic Metabolism operation.
-
-Adversarial execution exists as test equipment for validating the system that
-will run ordinary workloads.
-
-The project assumes that application-level instructions can fail, untrusted
-inputs can be deceptive, and individual components can behave incorrectly.
-Important security properties should therefore be enforced by architecture and
-execution boundaries rather than by model obedience alone.
-
-Security claims are treated as hypotheses until they can be tested.
-
----
-
-## Scope and authorization
-
-Security testing conducted as part of Agentic Metabolism is limited to systems,
-software, accounts, and environments owned by or explicitly authorized for use
-by the project operator.
-
-The project is not intended for unauthorized access, third-party exploitation,
-credential theft, persistence on external systems, or testing against systems
-without permission.
-
-Where possible, adversarial tests use synthetic credentials, disposable state,
-test resources, and controlled network targets.
-
-If project research reveals a vulnerability in third-party software, the intent
-is to handle it through appropriate responsible-disclosure channels rather than
-public exploitation.
-
----
-
-## Current status
-
-**Early research / pre-release**
-
-The kernel and its security model are still under active development.
-
-Current work is moving from architectural definition toward reproducible
-security validation. Some security properties have been specified but should
-not yet be interpreted as proven.
-
-The project is not currently intended for production deployment.
-
----
-
-## Why advanced cybersecurity model access is relevant
-
-Agentic Metabolism is approaching a stage where meaningful defensive validation
-requires reasoning about how untrusted code could deliberately violate sandbox,
-authority, persistence, resource, and data-access boundaries.
-
-More capable cybersecurity models would be used to:
-
-- develop defensive threat models
-- design controlled adversarial test cases
-- identify weaknesses in containment assumptions
-- analyze unexpected sandbox behavior
-- validate mitigations and patches
-- improve the project's security test coverage
-
-The intended use is defensive validation of an owned research environment.
-
-Advanced offensive capability is not required for the agent's ordinary
-operation.
-
----
-
-## Repository scope
-
-This repository currently serves as the public description of the project.
-
-Implementation, detailed security-test artifacts, machine-specific
-configuration, credentials, and sensitive research material are intentionally
-not published here.
-
-Additional architecture and security documentation may be added as the project
-matures and material can be published without weakening the systems being
-tested.
-
----
-
-## Project principles
-
-Agentic Metabolism is being developed around a few persistent ideas:
-
-**Authority should be explicit.**
-
-A component should not gain access merely because it can reach another
-component.
-
-**Containment should survive non-cooperation.**
-
-A security boundary should not depend on an agent or workload choosing to obey
-it.
-
-**Consequential actions should leave evidence.**
-
-Important state changes should be attributable and reconstructable.
-
-**Complexity should be earned.**
-
-New capabilities should be added only when the underlying boundaries remain
-understandable and testable.
-
-**Security claims should be testable.**
-
-"The system appears safe" is weaker than a specific invariant that can be
-deliberately challenged.
-
----
-
-## License
-
-A project license has not yet been selected.
+**License:** No project license has been selected.
