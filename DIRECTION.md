@@ -84,3 +84,7 @@ These are possible directions. The value of each should be tested through actual
 How much context is enough? What should be omitted? Can a knowledge state be reconstructed using what was available historically, not just when an artifact was ingested? How should the system respond when a person and a model disagree about memory? How can it carry an objective forward without transforming persistence into autonomy? What independent evidence is necessary before reporting an irreversible effect?
 
 AM remains research because these questions are not settled. The [public overview](README.md) summarizes the project; [STATUS.md](STATUS.md) separates demonstrated implementation from future work.
+
+---
+
+*Public documentation licensed under [CC BY 4.0](LICENSE-DOCS.md). Software and private implementation remain separately licensed or unlicensed.*
