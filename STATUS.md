@@ -69,3 +69,7 @@ This public repository is **not a mirror** of the private implementation. It int
 Defensive testing is restricted to owned or expressly authorized systems and controlled environments. The project does not advocate unauthorized access to third-party systems or claim that its adversarial research is suitable for ordinary production operation.
 
 For the wider research thesis, read [DIRECTION.md](DIRECTION.md). For the entry point, return to [README.md](README.md).
+
+---
+
+*Public documentation licensed under [CC BY 4.0](LICENSE-DOCS.md). Software and private implementation remain separately licensed or unlicensed.*

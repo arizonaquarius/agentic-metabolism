@@ -66,4 +66,6 @@ This public repository is a **separately authored description**, not a mirror of
 
 **Start here:** [DIRECTION.md](DIRECTION.md) for the long-term ambition; [STATUS.md](STATUS.md) for what has and has not been demonstrated.
 
-**License:** No project license has been selected.
+**Documentation license:** The original text in this public README, [DIRECTION.md](DIRECTION.md), and [STATUS.md](STATUS.md) is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-DOCS.md). Reuse and adaptation are welcome with appropriate attribution. The grant covers the specified public documentation, not implementation code, private research artifacts, or third-party material.
+
+**Software license:** Not yet selected. A future public software release may be open-source under a separately chosen software license.
