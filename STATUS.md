@@ -1,6 +1,6 @@
 # Research status and claim boundaries
 
-*Public statement as of October 19, 2026. The implementation and detailed verification record are private. This document is not a security certification or a reproducible release package.*
+*Public statement as of November 16, 2026. The implementation and detailed verification record are private. This document is not a security certification or a reproducible release package.*
 
 ## Current checkpoint
 
@@ -21,6 +21,21 @@ Workload numbers record the history of research experiments; release tags mark p
 | **Reproduction and review** | Recorded finite regressions and checkpoint verification for named source revisions, with output/evidence retention. | A successful run explaining every historical failure or proving safety outside the tested conditions. |
 
 The information-plane prototype also includes a bounded experiment using reviewed real-world source material. Its inputs and semantic mappings were supplied, not autonomously extracted or independently authenticated by AM. The human semantic-review limitation remains explicit.
+
+## Merged development after the checkpoint
+
+The latest promoted checkpoint remains **v0.5.0**. The following separates subsequent merged capabilities from partial components, proposals and unresolved questions; no new release is implied:
+
+| Status | Work and evidence boundary |
+| --- | --- |
+| **DEMONSTRATED** | Selected synthetic local files can be inventoried and hashed with deterministic content records and separate observation metadata. This is not a completed personal archive, transfer, backup or restoration system. |
+| **DEMONSTRATED** | Local analysis preserves supplied transaction-export bytes and source rows, produces capture-bounded reports, and compares two explicitly selected snapshots. Missing capture evidence and ambiguous identities remain unresolved; reports do not establish settlement or an authoritative personal ledger. |
+| **DEMONSTRATED** | A local read-only Glass demo supports browsing overview, obligation, observation and evidence views, with navigation regressions and targeted browser checks. Every example is fictional; no live account or archive is connected. |
+| **PARTIAL** | Information continuity, inventory, financial analysis and presentation each have working local components. End-to-end acquisition, independently verified archival promotion, deployment and recovery are not established by combining those components. |
+| **PROPOSED** | Four logical roles for reasoning, presentation, archival custody and shared computation, together with an Agent Authority Contract separating a Work Order, bounded grant and Result/Evidence Packet. No functional AAC executor or general browser agent is established. |
+| **UNRESOLVED** | Production identity and grant enforcement, credential custody, real-clock expiry and revocation, archive acceptance and recovery, hostile containment, and the retained regression discrepancy. |
+
+The Glass browser checks are limited emulation and interaction evidence, not physical-device, assistive-technology or complete accessibility certification. The public repository contains no private implementation or underlying test artifacts.
 
 ## Important unresolved boundaries
 

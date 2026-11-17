@@ -1,6 +1,6 @@
 # Research direction
 
-*Agentic Metabolism · Working research thesis · October 19, 2026*
+*Agentic Metabolism · Working research thesis · November 16, 2026*
 
 Agentic Metabolism (AM) is an attempt to connect two forms of continuity: a person's evolving understanding of the world, and their authority over software that helps them act in it.
 
@@ -58,6 +58,14 @@ AM distinguishes:
 - **Independent observation:** evidence about what happened, including failures, cleanup, and unresolved effect states.
 
 An information packet is not an authority token. A model's assertion of success is not independent observation. A known deadline is not consent to spend money. These boundaries remain important even when the proposed action is useful.
+
+## Small components before broad delegation
+
+The working direction separates reasoning and intent (**Core**), human inspection (**Glass**), original custody and controlled archive acceptance (**Phygitals**), and bounded shared computation (**Utilities**). These are logical responsibilities, not four deployed services. Routine access to preserved material should not require a reasoning model, and the person should retain access when an interface is unavailable.
+
+The local Glass demonstration is a limited browsing experiment using fictional data. Inventory and transaction-export analysis provide other small implemented slices; live connections and a complete cognitive interface remain future work. Their limits are recorded in [STATUS.md](STATUS.md).
+
+An Agent Authority Contract is a proposed way to keep three records distinct: the **Work Order** describing the objective and origin, the **grant** bounding what may be done, and the **Result/Evidence Packet** recording observations, uncertainty and handoff. A useful request does not create a grant, and a completed packet does not independently verify an effect or authorize archival acceptance. The design is not an operational AAC execution system.
 
 ## Independence without pretending to be isolated
 
