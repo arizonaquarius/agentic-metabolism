@@ -39,9 +39,13 @@ This is a conceptual map, **not** a complete implementation. AM is being develop
 
 ## Evidence-backed progress
 
-As of **October 19, 2026**, the latest promoted *private* implementation checkpoint is **v0.5.0**, focused on information-plane evidence continuity.
+As of **November 16, 2026**, the latest promoted *private* implementation checkpoint remains **v0.5.0**, focused on information-plane evidence continuity.
 
 A fixed-input local prototype preserves source evidence, explicit interpretations, corrections, and reconstructable historical packets. Separate finite supervisor and qualification experiments exercise scoped authority, process observation, lifecycle behavior, accounting, and uncertainty.
+
+Subsequent merged development adds bounded local file inventories, source-preserving transaction-export analysis and snapshot comparison, and a local read-only **Glass** browsing demo. Glass uses conspicuously fictional records; it is not connected to financial accounts or an archival service. These are small implemented slices after the checkpoint, not a new promoted release or a deployed assistant.
+
+Broader archival services, shared workers, live integrations and an Agent Authority Contract execution system remain proposed. [STATUS.md](STATUS.md) distinguishes **DEMONSTRATED**, **PARTIAL**, **PROPOSED** and **UNRESOLVED** work.
 
 This does **not** establish a general long-term memory service, autonomous interpretation of arbitrary documents, or production-ready containment. Generic hostile-workload admission remains closed. A planned hostile qualification campaign has not been executed, and a historical regression discrepancy remains unresolved despite successful later reruns.
 
