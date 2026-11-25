@@ -1,6 +1,6 @@
 # Research status and claim boundaries
 
-*Public statement as of November 16, 2026. The implementation and detailed verification record are private. This document is not a security certification or a reproducible release package.*
+*Public statement as of November 25, 2026. The implementation and detailed verification record are private. This document is not a security certification or a reproducible release package.*
 
 ## Current checkpoint
 
@@ -31,11 +31,11 @@ The latest promoted checkpoint remains **v0.5.0**. The following separates subse
 | **DEMONSTRATED** | Selected synthetic local files can be inventoried and hashed with deterministic content records and separate observation metadata. This is not a completed personal archive, transfer, backup or restoration system. |
 | **DEMONSTRATED** | Local analysis preserves supplied transaction-export bytes and source rows, produces capture-bounded reports, and compares two explicitly selected snapshots. Missing capture evidence and ambiguous identities remain unresolved; reports do not establish settlement or an authoritative personal ledger. |
 | **DEMONSTRATED** | A local read-only Glass demo supports browsing overview, obligation, observation and evidence views, with navigation regressions and targeted browser checks. Every example is fictional; no live account or archive is connected. |
-| **PARTIAL** | Information continuity, inventory, financial analysis and presentation each have working local components. End-to-end acquisition, independently verified archival promotion, deployment and recovery are not established by combining those components. |
-| **PROPOSED** | Four logical roles for reasoning, presentation, archival custody and shared computation, together with an Agent Authority Contract separating a Work Order, bounded grant and Result/Evidence Packet. No functional AAC executor or general browser agent is established. |
+| **PARTIAL** | Information continuity, inventory, financial analysis and presentation each have working local components. A reviewed Glass service template and commit-pinned release/rollback procedure have local checks and rehearsal evidence; target-host activation, reboot/rollback and physical-device acceptance are not established in the reviewed record. End-to-end acquisition, independently verified archival promotion and production recovery remain unestablished. |
+| **PARTIAL / PROPOSED** | Four logical roles for institutional continuity, presentation, archival custody and independently usable computation. Reviewed Agent Authority Contract record designs and synthetic checks exist, separating a Work Order, bounded grant and Result/Evidence Packet; APES describes accountable responsibilities. Operational grant enforcement, general selective corpus retrieval, automated workcarts and a general browser agent are not established. |
 | **UNRESOLVED** | Production identity and grant enforcement, credential custody, real-clock expiry and revocation, archive acceptance and recovery, hostile containment, and the retained regression discrepancy. |
 
-The Glass browser checks are limited emulation and interaction evidence, not physical-device, assistive-technology or complete accessibility certification. The public repository contains no private implementation or underlying test artifacts.
+The Glass browser checks are limited emulation and interaction evidence, not physical-device, assistive-technology or complete accessibility certification. A November 22 merged deployment-preparation change does not establish that a service is installed, running or accepted. Local release rehearsal simulated privileged ownership and service restarts. The public repository contains no private implementation or underlying test artifacts.
 
 ## Important unresolved boundaries
 
@@ -55,7 +55,9 @@ These limitations are part of the research record, not incidental footnotes.
 
 The project is exploring or considering:
 
-- A source-preserving personal conversation and document corpus, with longitudinal retrieval and contradiction handling.
+- A source-preserving personal conversation and document corpus, with longitudinal retrieval, task-scoped context assembly, branch-aware reconstruction and contradiction handling. An earlier research corpus and derived case records motivate this direction; the general ongoing intake/retrieval service is not established.
+- Source-linked institutional case histories that preserve failed attempts, observed outcomes, the person's reported experience and remaining work without replacing originals.
+- Independently useful deterministic tools and scoped agent investigations at unresolved inflection points; durable identity, routine service observation, graceful degradation and independent recovery. Specific mechanisms and operational acceptance are open.
 - Evaluation of context selection and historical reconstruction, including explicit tests of **with-context versus without-context** reasoning.
 - A human-facing cognitive interface to examine associations, decisions, dissent, corrections, and unresolved questions.
 - Long-lived objectives that can surface a useful next step without automatically extending the authority previously granted.
@@ -63,7 +65,7 @@ The project is exploring or considering:
 - More rigorous empirical security and containment qualification under controlled, authorized conditions.
 - Research pilots, potentially including financial information, without claiming automated trading or privileged wallet/brokerage action.
 
-None of these should be described as a shipped feature merely because it has been discussed, prototyped in another system, or represented in a visual design.
+None of these should be described as a shipped feature merely because it has been discussed, prototyped in another system, or represented in a visual design. The owner's practical successes with separately operated tools and infrastructure may motivate research priorities; they are not proof that the integrated Core, Utilities, archive or interface has delivered those outcomes.
 
 ## Reading claims accurately
 
