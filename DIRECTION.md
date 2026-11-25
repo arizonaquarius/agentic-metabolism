@@ -1,10 +1,10 @@
 # Research direction
 
-*Agentic Metabolism · Working research thesis · November 16, 2026*
+*Agentic Metabolism · Working research thesis · November 25, 2026*
 
-Agentic Metabolism (AM) is an attempt to connect two forms of continuity: a person's evolving understanding of the world, and their authority over software that helps them act in it.
+Agentic Metabolism (AM) is an attempt to connect a person's evolving understanding of the world, their authority over software that helps them act in it, and the durable operational competence of tools they can use themselves.
 
-Neither should depend on a single model being correct, cooperative, or available indefinitely. This document describes where the project is trying to go, not what it already delivers. See [STATUS.md](STATUS.md) for the evidence boundary.
+None should depend on a single model being correct, cooperative, or available indefinitely. This document describes where the project is trying to go, not what it already delivers. See [STATUS.md](STATUS.md) for the evidence boundary.
 
 ## A record of thinking, not a personality summary
 
@@ -24,6 +24,16 @@ A synthesized memory should be challengeable against its sources. When an AI-gen
 
 The desired result is **epistemic continuity**: the ability to examine the ancestry of an understanding. It is not perfect recall, and it is not a claim that AM can independently determine what is true.
 
+## Institutional experience and selective context
+
+The project emerged in part from longitudinal research over a personal conversation archive. The corpus is not merely a reservoir of facts about a person. It can retain the sequence of reasoning, disagreement, correction and practical intervention that produced a particular outcome. That makes selective, source-linked retrieval a foundational method of Core, rather than an incidental ingestion feature.
+
+A useful case history preserves the original difficulty, constraints, attempts (including failures), intervention, observed outcome, remaining work and the person's own account of its significance. Contemporary observations and retrospective testimony must remain distinguishable from the analyst's interpretation and independently verified effects. A victory need not mean a closed case; a failure may contain a useful lesson. Later interpretations can be revised without silently replacing the underlying record.
+
+Keep original conversation identities, timestamps, ancestry, branches, corrections and source references where available. Deterministic retrieval primitives should be independently usable. Core can assemble a temporary, task-scoped context package containing just the relevant and authorized material, leaving unrelated private history in custody. A context packet is not a grant to act. Selection quality, reconstruction accuracy, access controls and recovery require tests of their own.
+
+An early candidate experiment is to retrieve a known practical episode from an imprecise recollection, reconstruct related branches without counting copied history twice, and separate reported satisfaction from independently established effects. These are intended tests, not a claim of an existing general retrieval system.
+
 ## Why “metabolism”?
 
 The name is a metaphor for an inspectable transformation cycle:
@@ -33,7 +43,8 @@ The name is a metaphor for an inspectable transformation cycle:
 3. **Reconcile:** retain corrections, challenges, and the lineage of changed conclusions.
 4. **Circulate:** assemble task-relevant context without stripping away epistemic distinctions.
 5. **Propose:** let models suggest actions or experiments without conferring permission.
-6. **Authorize and observe:** require separately scoped authority for consequential actions; distinguish their independently observed effects from claims of completion.
+6. **Authorize and operate:** use independently useful tools for work, with separately scoped authority for consequential actions.
+7. **Observe and learn:** distinguish independently observed effects from claims of completion, preserve the evidence and unresolved questions, and make that experience available for later interpretation.
 
 Not every stage has been implemented. A useful cognitive interface will need to help a person inspect and revise this process, rather than hide it behind an apparently seamless assistant.
 
@@ -61,11 +72,15 @@ An information packet is not an authority token. A model's assertion of success 
 
 ## Small components before broad delegation
 
-The working direction separates reasoning and intent (**Core**), human inspection (**Glass**), original custody and controlled archive acceptance (**Phygitals**), and bounded shared computation (**Utilities**). These are logical responsibilities, not four deployed services. Routine access to preserved material should not require a reasoning model, and the person should retain access when an interface is unavailable.
+The working direction separates institutional continuity, reasoning and governance (**am-core**), human inspection (**am-glass**), original custody and controlled archive acceptance (**am-phygitals**), and bounded shared computation (**am-utilities**). These are logical responsibilities, not four deployed services. Core and Utilities matter equally: a person or agent needs both the context to choose well and dependable tools to act on that choice. Routine access to preserved material and independently executable utilities should not require a reasoning model, Core or Glass.
+
+Favor deterministic tools for routine work. Named, repeatable checks and bounded, preauthorized responses can handle known conditions; invoke agentic investigation at an inflection point where evidence conflicts, known responses fail, or judgment among alternatives is useful. Assemble a temporary workcart with the objective, relevant evidence, available tools, authority and acceptance conditions. An investigation can be valuable even if it only narrows a problem. Consequential outcomes require independent verification. Retain useful operational evidence; review and test proposed improvements to the deterministic tools before adopting them.
+
+Institutional resilience is a complementary concern: preserve independent recovery paths, observe service health and degrade gracefully rather than making routine maintenance depend on inference. Distinguish methods from mechanisms. Durable references should survive verified renames, relocations and revisions, without treating successful resolution as permission to read or execute. A registry, scheduler or observer may implement part of a method; no particular service or software stack follows merely from naming the responsibility.
 
 The local Glass demonstration is a limited browsing experiment using fictional data. Inventory and transaction-export analysis provide other small implemented slices; live connections and a complete cognitive interface remain future work. Their limits are recorded in [STATUS.md](STATUS.md).
 
-An Agent Authority Contract is a proposed way to keep three records distinct: the **Work Order** describing the objective and origin, the **grant** bounding what may be done, and the **Result/Evidence Packet** recording observations, uncertainty and handoff. A useful request does not create a grant, and a completed packet does not independently verify an effect or authorize archival acceptance. The design is not an operational AAC execution system.
+An Agent Authority Contract is a proposed way to keep three records distinct: the **Work Order** describing the objective and origin, the **grant** bounding what may be done, and the **Result/Evidence Packet** recording observations, uncertainty and handoff. A useful request does not create a grant, and a completed packet does not independently verify an effect or authorize archival acceptance. Assess, Propose, Execute and Steward (APES) describe accountable responsibilities rather than four autonomous agents. The person retains final stewardship. Reviewed document contracts and synthetic checks are not an operational AAC enforcement system.
 
 ## Independence without pretending to be isolated
 
@@ -85,7 +100,7 @@ An early research technique is to compare model reasoning **with and without car
 
 **Technical and scientific work.** Connect hypotheses, experiments, counterexamples, failures, and verification evidence. Preserve unresolved anomalies instead of treating a successful rerun as an explanation.
 
-These are possible directions. The value of each should be tested through actual use, not assumed from a diagram.
+These are possible directions. The value of each should be tested through actual use, not assumed from a diagram. Practical outcomes and the person's own reasons for valuing them should inform subsequent priorities; avoid attributing every improvement to the project or treating report volume as evidence of usefulness.
 
 ## Questions still open
 
